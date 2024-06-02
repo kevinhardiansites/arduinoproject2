@@ -171,7 +171,7 @@ void loop() {
 
 https://github.com/kevinhardiansites/arduinoproject2/assets/141954008/30e1883e-07e6-443e-86c4-d14053204efe
   
-5. Data suhu dan kelembaban diperbarui setiap detik pada posisi yang telah ditentukan di layar OLED.
+4. Data suhu dan kelembaban diperbarui setiap detik pada posisi yang telah ditentukan di layar OLED.
 
 ## Kesimpulan
 Proyek ini berhasil mengintegrasikan mikrokontroler ATtiny85 dengan sensor DHT22 dan layar OLED untuk mengukur dan menampilkan suhu serta kelembaban lingkungan. Dengan menampilkan data suhu dan kelembaban secara real-time serta menambahkan animasi detak jantung, proyek ini menciptakan antarmuka pengguna yang tidak hanya informatif tetapi juga menarik.
