@@ -168,6 +168,7 @@ void loop() {
 ![alt text](https://github.com/kevinhardiansites/arduinoproject2/blob/main/Daftar%20Gambar/pengaturan%20input%20sensor.png?raw=true)
 
 3. Sensor DHT22 membaca suhu dan kelembaban dari lingkungan sekitar. Data ini diambil setiap detik pada fungsi loop(). Kita dapat mengubah-ubah input suhu dan kelembapan pada simulasi dengan menggeser-geser slider.
+
 https://github.com/kevinhardiansites/arduinoproject2/assets/141954008/30e1883e-07e6-443e-86c4-d14053204efe
   
 5. Data suhu dan kelembaban diperbarui setiap detik pada posisi yang telah ditentukan di layar OLED.
