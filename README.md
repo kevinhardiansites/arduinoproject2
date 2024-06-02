@@ -163,6 +163,6 @@ void loop() {
 Proyek ini berhasil mengintegrasikan mikrokontroler ATtiny85 dengan sensor DHT22 dan layar OLED untuk mengukur dan menampilkan suhu serta kelembaban lingkungan. Dengan menampilkan data suhu dan kelembaban secara real-time serta menambahkan animasi detak jantung, proyek ini menciptakan antarmuka pengguna yang tidak hanya informatif tetapi juga menarik.
 
 ## Saran
-1. Perlu dilakukan kalibrasi sensor DHT22 untuk meningkatkan akurasi pengukuran. Tambahkan juga sensor kalibrasi eksternal yang dapat memberikan pembacaan yang lebih akurat dan membandingkan hasilnya untuk melakukan penyesuaian.
+1. Perlu dilakukan kalibrasi berkala sensor DHT22 untuk meningkatkan akurasi pengukuran. Tambahkan juga sensor kalibrasi eksternal yang dapat memberikan pembacaan yang lebih akurat dan membandingkan hasilnya untuk melakukan penyesuaian.
 2. Penambahan modul penyimpanan seperti SD card atau EEPROM untuk menyimpan data suhu dan kelembaban secara periodik. Hal ini memungkinkan analisis data historis dan pemantauan tren perubahan lingkungan dalam jangka waktu yang lebih panjang.
 3. Penambahan sensor-sensor lain seperti sensor kualitas udara (CO2, VOC), sensor tekanan atmosfer, atau sensor cahaya. Ini akan membuat perangkat lebih serbaguna dalam pemantauan lingkungan.
