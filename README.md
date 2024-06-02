@@ -122,5 +122,47 @@ float getHumidity() {
 } //Mengembalikan kelembaban yang dibaca dari sensor DHT22
 ```
 
+Fungsi Setup
+```cpp
+void setup() {
+  pinMode(DHT22_PIN, INPUT);
+  oled.begin(128, 64, sizeof(tiny4koled_init_128x64br), tiny4koled_init_128x64br);
+  oled.setFont(FONT6X8);
+  oled.clear();
+  oled.on();
+  splash();
+  delay(3000);
+  prepareDisplay();
+} // Dijalankan sekali saat perangkat dinyalakan, untuk inisialisasi pin, layar OLED, dan menampilkan splash screen.
+'''
 
+Fungsi Loop
+```cpp
+void loop() {
+  static long startTime = 0;
+  long currentTime;
+  DHT.read22(DHT22_PIN);
+  currentTime = millis();
+  if ((currentTime - startTime) > 1000) {
+    startTime = currentTime;
+    float temperature = getTemperature();
+    oled.setCursor(57, 4);
+    oled.print(temperature, 1);
+    oled.print("C  ");
+    float humidity = getHumidity();
+    oled.setCursor(57, 5);
+    oled.print(humidity, 1);
+    oled.print("%  ");
+    oled.bitmap(105, 4, 110, 7, img_thermometer);
+  }
+  heartBeat();
+} //Fungsi loop akan dijalankan terus menerus, membaca data sensor DHT22 setiap detik dan menampilkan nilai suhu dan kelembaban di layar OLED, serta menampilkan animasi detak jantung
+```
 
+## Kesimpulan
+Proyek ini berhasil mengintegrasikan mikrokontroler ATtiny85 dengan sensor DHT22 dan layar OLED untuk mengukur dan menampilkan suhu serta kelembaban lingkungan. Dengan menampilkan data suhu dan kelembaban secara real-time serta menambahkan animasi detak jantung, proyek ini menciptakan antarmuka pengguna yang tidak hanya informatif tetapi juga menarik.
+
+## Saran
+1. Perlu dilakukan kalibrasi sensor DHT22 untuk meningkatkan akurasi pengukuran. Tambahkan juga sensor kalibrasi eksternal yang dapat memberikan pembacaan yang lebih akurat dan membandingkan hasilnya untuk melakukan penyesuaian.
+2. Penambahan modul penyimpanan seperti SD card atau EEPROM untuk menyimpan data suhu dan kelembaban secara periodik. Hal ini memungkinkan analisis data historis dan pemantauan tren perubahan lingkungan dalam jangka waktu yang lebih panjang.
+3. Penambahan sensor-sensor lain seperti sensor kualitas udara (CO2, VOC), sensor tekanan atmosfer, atau sensor cahaya. Ini akan membuat perangkat lebih serbaguna dalam pemantauan lingkungan.
