@@ -3,6 +3,9 @@
 ## Deskripsi Proyek
 Proyek ini adalah sebuah sistem pengukur suhu dan kelembaban yang menggunakan mikrokontroler ATtiny85, sensor DHT22, dan layar OLED kecil untuk menampilkan data. Sistem ini dirancang untuk mengukur dan menampilkan suhu dan kelembaban secara real-time.
 
+## Tujuan
+Merancang sebuah sistem yang mampu mengukur suhu dan kelembaban dengan akurat menggunakan sensor DHT22.
+
 ## Fitur
 
 1. Pengukuran Suhu dan Kelembaban: Menggunakan sensor DHT22 untuk membaca data suhu dan kelembaban lingkungan.
