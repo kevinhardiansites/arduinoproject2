@@ -56,8 +56,9 @@ const unsigned char  img_thermometer[] PROGMEM = {
 dht DHT; //Mengakses fungsi library DHT
 ```
 
-Fungsi Splash Screen
+Fungsi Splash
 ```cpp
+// Fungsi untuk menampilkan layar splash
 void splash() {
   oled.clear();
   oled.setCursor(15, 1);
@@ -71,8 +72,9 @@ void splash() {
 }
 ```
 
-Fungsi Animasi Heartbeat
+Fungsi Heartbeat
 ```cpp
+// Fungsi untuk menampilkan animasi detak jantung di layar OLED
 void heartBeat() {
   static char big = 1;
   static long startTime = 0;
@@ -89,4 +91,36 @@ void heartBeat() {
   }
 }
 ```
+
+Fungsi Menyiapkan Tampilan
+```cpp
+// Fungsi untuk menyiapkan tampilan layar OLED dengan teks dan gambar
+void prepareDisplay() {
+  oled.clear();
+  oled.begin();
+  oled.setCursor(18, 0);
+  oled.print(F("Kevin Hardian"));
+  oled.setCursor(1, 2);
+  oled.print(F("Temperature-Humidity"));
+  oled.bitmap(105, 4, 110, 7, img_thermometer);
+  oled.setCursor(57, 4);
+  oled.print(F("24.0C"));
+  oled.setCursor(57, 5);
+  oled.print(F("40.0%"));
+  oled.bitmap(10, 5, 17, 2, img_heart_small);
+}
+```
+
+Fungsi Mendapatkan Suhu dan Kelembaban
+```cpp
+float getTemperature() {
+  return DHT.temperature;
+} //Mengembalikan suhu yang dibaca dari sensor DHT22
+
+float getHumidity() {
+  return DHT.humidity;
+} //Mengembalikan kelembaban yang dibaca dari sensor DHT22
+```
+
+
 
