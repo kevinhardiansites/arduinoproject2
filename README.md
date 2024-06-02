@@ -25,7 +25,7 @@ Merancang sebuah sistem yang mampu mengukur suhu dan kelembaban dengan akurat me
 
 Link Simulasi: https://wokwi.com/projects/399569563109358593
 
-## Deskripsi Program
+## Penjelasan Program
 
 Library yang digunakan
 
