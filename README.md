@@ -1,4 +1,4 @@
-# Mengukur dan menampilkan kondisi suhu dan kelembapan menggunakan Attiny85
+# Sistem Pengukur Suhu dan Kelembaban Menggunakan Mikrokontroler ATtiny85
 
 ## Deskripsi Proyek
 Proyek ini adalah sebuah sistem pengukur suhu dan kelembaban yang menggunakan mikrokontroler ATtiny85, sensor DHT22, dan layar OLED kecil untuk menampilkan data. Sistem ini dirancang untuk mengukur dan menampilkan suhu dan kelembaban secara real-time.
@@ -12,7 +12,7 @@ Proyek ini adalah sebuah sistem pengukur suhu dan kelembaban yang menggunakan mi
 5. Pembaruan Data: Memperbarui data suhu dan kelembaban setiap detik.
 
 ## Alat dan Bahan
-1. Mikrokontroler Attiny85
+1. Mikrokontroler ATtiny85
 2. Digital Humidity and Temperature sensor (DHT22)
 3. Monochrome 128x64 OLED display
 4. Arduino Simulator Wokwi
