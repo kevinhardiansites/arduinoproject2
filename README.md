@@ -22,5 +22,14 @@ Proyek ini adalah sebuah sistem pengukur suhu dan kelembaban yang menggunakan mi
 
 Link Simulasi: https://wokwi.com/projects/399569563109358593
 
+## Deskripsi Program
+
+Library yang digunakan
+
+```cpp
+#include <dht.h>
+#include <TinyWireM.h>
+#include <Tiny4kOLED.h>
+```
 
 
