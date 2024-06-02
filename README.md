@@ -159,6 +159,18 @@ void loop() {
 } //Fungsi loop akan dijalankan terus menerus, membaca data sensor DHT22 setiap detik dan menampilkan nilai suhu dan kelembaban di layar OLED, serta menampilkan animasi detak jantung
 ```
 
+## Cara Kerja Program
+
+1. Saat simulasi dijalankan, Layar OLED akan menampilkan pesan sambutan fungsi splash.
+![alt text](https://github.com/kevinhardiansites/arduinoproject2/blob/main/Daftar%20Gambar/dalam%20keadaan%20hidup.png?raw=true)
+
+2. Lalu setelahnya akan menampilkan nilai suhu dan kelembapan disekitar.
+![alt text](https://github.com/kevinhardiansites/arduinoproject2/blob/main/Daftar%20Gambar/pengaturan%20input%20sensor.png?raw=true)
+
+3. Sensor DHT22 membaca suhu dan kelembaban dari lingkungan sekitar. Data ini diambil setiap detik pada fungsi loop(). Kita dapat mengubah-ubah input suhu dan kelembapan pada simulasi dengan menggeser-geser slider.
+  
+4. Data suhu dan kelembaban diperbarui setiap detik pada posisi yang telah ditentukan di layar OLED.
+
 ## Kesimpulan
 Proyek ini berhasil mengintegrasikan mikrokontroler ATtiny85 dengan sensor DHT22 dan layar OLED untuk mengukur dan menampilkan suhu serta kelembaban lingkungan. Dengan menampilkan data suhu dan kelembaban secara real-time serta menambahkan animasi detak jantung, proyek ini menciptakan antarmuka pengguna yang tidak hanya informatif tetapi juga menarik.
 
